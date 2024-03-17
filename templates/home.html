@@ -1,0 +1,222 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        /* .box{
+            border: 1px solid black;
+        }
+        .row{
+          border: 1px solid black;
+        } */
+    </style>
+</head>
+<body>
+  <div class="container-fluid box">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="bi bi-tools"></i>&nbsp;Biker's Vault&nbsp;<i class="bi bi-tools"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/register">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer Service</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="row box">
+      <div class="col-3 box" style="height: 120vh;">
+        <h3>Sort By features</h3>
+        <hr>
+        <ul>
+          <li>Brand</li>
+          <li>Type</li>
+          <li>CC</li>
+        </ul>
+        <hr>
+        <h3>Sort by Price</h3>
+        <hr>
+        <table>
+          <tr>
+          <td><label for="">From</label></td>
+          <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td><label for="">To</label></td>
+            <td><input type="number"></td>
+          </tr>
+          <tr>
+            <td><label for="customRange2" class="form-label">Set range</label></td>
+            <td><input type="range" class="form-range" min="0" max="5000000" id="customRange2"></td>
+          </tr>
+        </table>
+        <hr>
+        <h3>Modes</h3>
+        <hr>
+        <ul>
+          <li>Rent</li>
+          <li>Test Ride</li>
+          <li>Booking</li>
+        </ul>
+        <hr>
+        <h3>Riding Gears</h3>
+        <hr>
+        <b>Sort by: </b><br>
+        <ul>
+          <li>Men</li>
+          <li>Women</li>
+        </ul>
+        <ul>
+          <li>Jackets</li>
+          <li>Pants</li>
+          <li>Shin Guard</li>
+          <li>Knee guards</li>
+          <li>Gloves</li>
+          <li>Boots</li>
+          <li>Helmet</li>
+          <li>Rain liners</li>
+        </ul>
+      </div>
+      <div class="col-9 box" style="height: 120vh;">
+        <div class="row box" style="height: 60vh;">
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/Jacket.jpg" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">URBAN X JACKET</h5>
+                <p class="card-text">With its active fit and fundamental features, the Urban transitions effortlessly from the weekday commute to the weekend getaway..</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/pants.jpg" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stealth Evo Pants</h5>
+                <p class="card-text">With understated super functional design, for the traveller who is unphased through any terrain, weather or ride.</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/helmet.jpg" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Steel Bird Helmet</h5>
+                <p class="card-text">Steelbird SBH-17 Terminator ISI Certified Full Face Graphic Helmet in Matt Finish with Clear Visor.</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row box" style="height: 60vh;">
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/gloves.webp" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Urban Pro Gloves</h5>
+                <p class="card-text"> The Urban Pro 2 gloves are made to endure daily use and last till they develop a patina unique only to you.</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/kneeguards.webp" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bastonic knee guards</h5>
+                <p class="card-text">Bastion Bionic Knee Guards are engineered to deliver next-generation protection, performance and comfort.</p>
+                <a href="#" class="btn btn-primary">Add To Cart</a>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 box">
+            <div class="card" style="height: 58vh;">
+              <img src="static/media/xmr.webp" style="height: 28vh; width: 20vw;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Hero XMR</h5>
+                <p class="card-text">Hero Karizma XMR: Power, control, style. Advanced features, robust engineering. Unparalleled riding experience commitment.</p>
+                <a href="#" class="btn btn-primary">Test Ride</a>
+                <a href="#" class="btn btn-primary">Details</a>
+                <a href="#" class="btn btn-primary">Book</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row box">
+      <div class="col-4 box" style="height: 25vh;">
+        <h2>About us</h2>
+        <p>Discover top-quality bikes for rent or purchase. From sleek road bikes to rugged mountain bikes, find your perfect ride for thrilling adventures. Start your journey with us now!</p>
+        <a href="about.html">read more--> </a>
+      </div>
+      <div class="col-4 box" style="height: 25vh;">
+          <h2>Contact Us</h2>
+        <div class="row" style="height: 19vh;">
+          <div class="col-5 <!--box-->">
+            <ul>
+              <li><i class="bi bi-envelope-at"></i>&nbsp;E-Mail us</li>
+              <li><i class="bi bi-instagram"></i>&nbsp;DM us</li>
+              <li><i class="bi bi-whatsapp"></i>&nbsp;Just drop a text</li>
+            </ul>
+          </div>
+          <div class="col-7 <!--box-->">
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.608111429211!2d73.08104837505559!3d19.212311582020597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf6925f3604b%3A0xf48435e2b15d49cb!2sNav%20Deepti%20Apartment!5e0!3m2!1sen!2sin!4v1707746602294!5m2!1sen!2sin" width="275" height="137" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 <!--box-->" style="height: 25vh;">
+        <h2>Other Services</h2>
+        <ul>
+          <li>Servicing</li>
+          <li>Second Hand Selling</li>
+          <li>Modifications</li>
+          <li>Riding Gears</li>
+          <li>Trails</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <!-- {% load static %}
+    {% for bike in bikes %} 
+    <strong>{{bike.brand}}</strong><br>
+    <strong>{{bike.name}}</strong><br>
+    <strong>{{bike.type}}</strong><br>
+    <strong>{{bike.price}}</strong><br>
+    <strong>{{bike.year}}</strong><br> <hr>
+    {% endfor %} -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block 'main' %}
+<div class="row">
+  <div class="col-6">
+      <img src="{{ bike.pimage.url }}" class="card-img-top" alt="...">
+  </div>
+  <div class="col-6">
+      <div class="card-body">
+          <h5 class="card-title">Name:&nbsp;{{ bike.brand }}&nbsp;{{ bike.name }}</h5><br><br>
+          <strong class="card-text">Type:&nbsp;{{bike.type}}</strong><br><br>
+          <strong>Launch Year: {{bike.year}}</strong><br>
+          <strong>Details:</strong><p>{{bike.details}}</p><br>
+          <strong>Price:{{ bike.price }}</strong><br>
+          <a href="/addtocart/{{bike.id}}"" class="btn btn-primary">Add To Cart</a>
+          &nbsp;
+          <a href="/" class="btn btn-primary">Home</a>
+        </div>
+  </div>
+</div>
+{% endblock 'main' %}

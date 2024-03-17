@@ -1,0 +1,130 @@
+{% comment %} {% load static %}
+<!-- <style>
+  button{
+    border-radius: 30px;
+  }
+  button:hover{
+    background-color: blue;
+    transition: 0.5s;
+  }
+</style> -->
+<div class="row box">
+  <div class="col-3 box" style="height: 120vh; width:30vw; ">
+
+      <h3>Sort By features</h3>
+      
+      <ul>
+ 
+      <hr>
+      </ul>
+      <hr>
+      <h3>Sort by Price</h3>
+      <hr>
+      <table>
+        <tr>
+        <td><label for="">From</label></td>
+        <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td><label for="">To</label></td>
+          <td><input type="number"></td>
+        </tr>
+        <tr>
+          <td><label for="customRange2" class="form-label">Set range</label></td>
+          <td><input type="range" class="form-range" min="0" max="5000000" id="customRange2"></td>
+        </tr>
+      </table>
+      <hr>
+      <h3>Modes</h3>
+      <hr>
+      <ul>
+        <li>Rent</li>
+        <li>Test Ride</li>
+        <li>Booking</li>
+      </ul>
+      <hr>
+      <!-- <h3>Riding Gears</h3>
+      <hr>
+      <b>Sort by: </b><br>
+      <ul>
+        <li>Men</li>
+        <li>Women</li>
+      </ul>
+      <ul>
+        <li>Jackets</li>
+        <li>Pants</li>
+        <li>Shin Guard</li>
+        <li>Knee guards</li>
+        <li>Gloves</li>
+        <li>Boots</li>
+        <li>Helmet</li>
+        <li>Rain liners</li>
+      </ul> -->
+    </div> {% endcomment %}
+
+
+  <!-- row 2 started  -->
+
+<div class="row" >
+  <!-- row2 column 1 started -->
+  <div class="col-3 p-3 bg-body-tertiary " >
+    <!-- <h3>Sort By features</h3> -->
+    <h5>Filter Products By category</h5>
+    <hr>
+    <ul>
+      <a href="/" style="text-decoration: none;">All</a><br>
+      <a href="/searchby/Racing Sports" style="text-decoration: none;">Racing Sports</a><br>
+      <a href="/searchby/Naked Sports" style="text-decoration: none;">Naked Sports</a><br> 
+      <a href="/searchby/Classic" style="text-decoration: none;">Classic</a><br> 
+      <a href="/searchby/Adventure" style="text-decoration: none;">Adventure</a><br> 
+      <a href="/searchby/Naked" style="text-decoration: none;">Naked</a><br> 
+      <a href="/searchby/Adventure Sport" style="text-decoration: none;">Adventure Sports</a><br> 
+      <a href="/searchby/Dirt" style="text-decoration: none;">Dirt</a><br> 
+      <a href="/searchby/Commuter" style="text-decoration: none;">Commuter</a><br>
+    </ul>
+    <hr>
+    <h3>Sort by Price</h3>
+    <hr>
+        <a href="/sort/asc" style="text-decoration: none;">Low to High</a><br>
+        <a href="/sort/desc" style="text-decoration: none;">High To Low</a>
+    <form class="row g-3" action="/pricerange">
+      <div class="col-auto">
+        <label>From:</label>
+        <input type="text"  class="form-control" name="min" >
+      </div><br>
+      <div class="col-auto">
+        <label>To:</label>
+        <input type="text" class="form-control" name="max" >
+      </div>
+      <div class="col-auto mx-auto">
+        <input type="submit" class="btn btn-primary " value="Search"></input>
+      </div>
+    </form>
+    <hr>
+    <!-- <h3>Modes</h3>
+    <hr>
+    <ul>
+      <li>Rent</li>
+      <li>Test Ride</li>
+      <li>Booking</li>
+    </ul>
+    <hr>-->
+    <h3>Riding Gears</h3>
+    <hr>
+    <h3><b>Sort by: </b></h3><br>
+    <!-- <ul>
+      <li>Men</li>
+      <li>Women</li>
+    </ul> -->
+    <ul>
+      <li>Jackets</li>
+      <li>Pants</li>
+      <li>Shin Guard</li>
+      <li>Knee guards</li>
+      <li>Gloves</li>
+      <li>Boots</li>
+      <li>Helmet</li>
+      <li>Rain liners</li>
+    </ul> 
+
+    </div><!-- row2 column 1 end -->
